@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .nav{
+  background-color: black;
+  height: 50px;
+ 
+} */
+/* ul{
+  display: flex;
+  list-style: none;
+} */
+/* li{
+  color: white;
+  margin: auto;
+  font-family: verdana;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px;
+} */
+/* li:hover{
+  color: red;
+  text-shadow: white;
+  font-size: 24px;
+} */
+
+/* .hi{
+  color: blue;
+} */
+
+.active{
+  color: red;
+}
+
+

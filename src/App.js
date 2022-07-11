@@ -1,25 +1,115 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+
+// function App() {
+//   return (
+//     <>
+//       <div className="nav">
+//         <ul>
+//           <li>home</li>
+//           <li>about</li>
+//           <li>information</li>
+//           <li>contact us</li>
+//           <li>help</li>
+//         </ul>
+//       </div>
+//     </> 
+
+//   );
+// }
+
+
+
+
+// export default App;
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+import './index.css';
+// import App from './App';
+// import Component from './Compo';
+// import Car from './class';
+// import reportWebVitals from './reportWebVitals';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     {/* <Car /> */}
+//     {/* <App /> */}
+//     {/* <Component name="shivam soni" age="25"/> */}
+//   </React.StrictMode>
+// );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals();
+
+// import { Add, Subt, Multi, Del} from './onecom';
+
+// const heading = {
+//     color: 'red'
+// }
+
+// function App() {
+//     return (
+//         <>
+//             <h1 style={heading}>{Add (10, 20)}</h1>
+//             <h1 className="hi">{Subt (20, 10)}</h1>
+//             <h1>{Multi (2,5)}</h1>
+//             <h1>{Del (11, 2)}</h1>
+
+//         </>
+//     );
+// }
+
+
+
+
+
+
+
+// import React from 'react';
+// // import FetchNews from './Component/FetchNews';
+
+
+// function App() {
+//     return (
+//         <>
+//             {/* <FetchNews /> */}
+
+//         </>
+//     );
+// }
+
+
+// export default App;
+
+
+
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Component/Home';
+import About from './Component/About';
+import ContactUs from './Component/ContactUs';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/ContactUs" element={<ContactUs />} />
+                </Routes>
+            </BrowserRouter>
+        </>
+    )
 }
 
 export default App;
+
+
+
