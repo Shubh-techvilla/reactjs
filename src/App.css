@@ -41,9 +41,16 @@
 
 /* important css used to show the heading in two lines only, see this in FetchNews.jsx api heading.... */
 
-/* .line-br{
+.line-br{
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-} */
+}
+
+.card-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

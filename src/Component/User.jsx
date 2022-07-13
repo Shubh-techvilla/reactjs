@@ -1,34 +1,27 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-function Home() {
+function User(props) {
     return (
         <>
             <header>
                 <nav>
-                    <li>
+                <li>
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
                         <NavLink to="/About">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/product">Product</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/productapi">Product Api</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/ContactUs">ContactUs</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Services">Services</NavLink>
+                        <NavLink to={props.value.id}>ContactUs</NavLink>
                     </li>
-                    
-                    <h1>this is Home page</h1>
+                    <h1>this is User page</h1>
                 </nav>
             </header>
         </>
     )
 }
 
-export default Home;
+export default User;

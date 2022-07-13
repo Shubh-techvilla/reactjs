@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-function Home() {
+function Services() {
     return (
         <>
             <header>
@@ -12,23 +12,16 @@ function Home() {
                         <NavLink to="/About">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/product">Product</NavLink>
+                        <NavLink to="/Services">Service</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/productapi">Product Api</NavLink>
+                        <NavLink to="/Services/1234/kjhjhj">Service</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/ContactUs">ContactUs</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/Services">Services</NavLink>
-                    </li>
-                    
-                    <h1>this is Home page</h1>
+                    <h1>this is Services page I got this</h1>
                 </nav>
             </header>
         </>
     )
 }
 
-export default Home;
+export default Services;

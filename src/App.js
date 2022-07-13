@@ -72,14 +72,19 @@ import './index.css';
 
 
 // import React from 'react';
-// // import FetchNews from './Component/FetchNews';
-
+// import FetchNews from './Component/FetchNews';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Details from './Component/Details';
 
 // function App() {
 //     return (
 //         <>
-//             {/* <FetchNews /> */}
-
+//             <BrowserRouter>
+//                 <Routes>
+//                     <Route path="/" element={<FetchNews />} />
+//                     <Route path="/Details" element={<Details />} />
+//                 </Routes>
+//             </BrowserRouter>
 //         </>
 //     );
 // }
@@ -94,15 +99,34 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Component/Home';
 import About from './Component/About';
 import ContactUs from './Component/ContactUs';
+import User from './Component/User';
+import ProductApi from './Component/productApi';
+import ProductDetail from './Component/productDetailsApi';
+// import ShowData from './Component/ShowData';
+// import FakeApi from './Component/fakeapi';
+import PageNotFound from './Component/pageNotFound';
+// import FetchNews from './Component/FetchNews';
+// import Services from './Component/Services';
+// import Service from './Component/Service';
+
 
 function App() {
     return (
         <>
+            {/* <FakeApi /> */}
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/about" element={About} />
+                    <Route path="/product" element={<ProductApi />}>
+                        <Route path="/productdetail/:id" element={<ProductDetail />} />
+                    </Route>
+                    <Route path="/productapi" element={<ProductApi />} />
+
                     <Route path="/ContactUs" element={<ContactUs />} />
+                    <Route path="/user" element={<User />} />
+                    <Route path="*" element={<PageNotFound />} />
+                   
                 </Routes>
             </BrowserRouter>
         </>
