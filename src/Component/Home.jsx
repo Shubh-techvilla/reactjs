@@ -15,15 +15,15 @@ function Home() {
                         <NavLink to="/product">Product</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/productapi">Product Api</NavLink>
+                        <NavLink to="/productdetail">Product detail</NavLink>
                     </li>
                     <li>
                         <NavLink to="/ContactUs">ContactUs</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Services">Services</NavLink>
+                        <NavLink to="/user">user</NavLink>
                     </li>
-                    
+
                     <h1>this is Home page</h1>
                 </nav>
             </header>

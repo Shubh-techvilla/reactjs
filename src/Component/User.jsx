@@ -14,9 +14,10 @@ function User(props) {
                     <li>
                         <NavLink to="/ContactUs">ContactUs</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to={props.value.id}>ContactUs</NavLink>
-                    </li>
+                    </li> */}
+
                     <h1>this is User page</h1>
                 </nav>
             </header>
