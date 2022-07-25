@@ -94,15 +94,15 @@ import './index.css';
 
 
 
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Component/Home';
-import About from './Component/About';
-import ContactUs from './Component/ContactUs';
-import User from './Component/User';
-import Product from './Component/product';
-import ProductDetail from './Component/productdetail';
-import PageNotFound from './Component/pageNotFound';
+// import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Home from './Component/Home';
+// import About from './Component/About';
+// import ContactUs from './Component/ContactUs';
+// import User from './Component/User';
+// import Product from './Component/product';
+// import ProductDetail from './Component/productdetail';
+// import PageNotFound from './Component/pageNotFound';
 
 // // import ShowData from './Component/ShowData';
 // // import FakeApi from './Component/fakeapi';
@@ -111,29 +111,29 @@ import PageNotFound from './Component/pageNotFound';
 // import Service from './Component/Service';
 
 
-function App() {
-    return (
-        <>
-            {/* <FakeApi /> */}
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
+// function App() {
+//     return (
+//         <>
+//             {/* <FakeApi /> */}
+//             <BrowserRouter>
+//                 <Routes>
+//                     <Route path="/" element={<Home />} />
+//                     <Route path="/about" element={<About />} />
 
-                    <Route path="/product" element={<Product />}/>
-                    <Route path="/productdetail/:id" element={<ProductDetail />} />
+//                     <Route path="/product" element={<Product />}/>
+//                     <Route path="/productdetail/:id" element={<ProductDetail />} />
 
-                    <Route path="/ContactUs" element={<ContactUs />} />
-                    <Route path="/user" element={<User />} />
-                    <Route path="*" element={<PageNotFound />} />
+//                     <Route path="/ContactUs" element={<ContactUs />} />
+//                     <Route path="/user" element={<User />} />
+//                     <Route path="*" element={<PageNotFound />} />
 
-                </Routes>
-            </BrowserRouter>
-        </>
-    )
-}
+//                 </Routes>
+//             </BrowserRouter>
+//         </>
+//     )
+// }
 
-export default App;
+// export default App;
 
 // import React, { useState } from 'react';
 
@@ -251,6 +251,21 @@ export default App;
 
 // export default App;
 // export {FirstName, LastName}
+
+
+import React from 'react';
+import FormCom from './form';
+
+function App() {
+    return (
+        <>
+            <FormCom />
+
+        </>
+    );
+}
+
+export default App;
 
 
 
